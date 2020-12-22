@@ -1,8 +1,8 @@
 package Calculator_Operations;
 
 final public class MultiplyOperation {
-	int a =0;
-	int b=0;
+	private int a =0;
+	private int b=0;
 	public int getA() {
 		return a;
 	}
