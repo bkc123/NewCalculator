@@ -69,7 +69,7 @@ public class InteractiveCalculator {
 			System.out.println("The request Divide operation result is: " + result);
 		}
 		else if (operation.equals("All") || operation.equals("all")) {
-			SubstractOperation add = new SubstractOperation();
+			AddOperation add = new AddOperation();
 			add.setA(input1);
 			add.setB(input2);
 			result1 = add.getResult();
@@ -77,17 +77,17 @@ public class InteractiveCalculator {
 			SubstractOperation sub = new SubstractOperation();
 			sub.setA(input1);
 			sub.setB(input2);
-			result1 = add.getResult();
+			result2 = sub.getResult();
 			
-			SubstractOperation mult = new SubstractOperation();
+			MultiplyOperation mult = new MultiplyOperation();
 			mult.setA(input1);
 			mult.setB(input2);
-			result1 = add.getResult();
+			result3 = mult.getResult();
 			
-			SubstractOperation div = new SubstractOperation();
+			DivideOperation div = new DivideOperation();
 			div.setA(input1);
 			div.setB(input2);
-			result1 = add.getResult();
+			result4 = div.getResult();
 			
 			System.out.println("Result for each operation for given inputs are: \n" +
 							   "Add: " + result1 + 
